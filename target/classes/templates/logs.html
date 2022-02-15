@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logs</title>
+</head>
+<body>
+    <h1>What do you want to see?</h1>
+
+    <form action="#" th:action="@{/MCP/metrics}" method="post">
+        <input type="hidden" th:name="metrix" th:value="${metrics}">
+        <input type="submit" value="Metrics">
+    </form>
+
+    <form action="#" th:action="@{/MCP/kpis}" method="post">
+        <input type="hidden" name="kpis" th:value="${kpis}">
+        <input type="submit" value="Kpis">
+    </form>
+</body>
+</html>

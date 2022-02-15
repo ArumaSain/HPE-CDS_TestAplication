@@ -15,12 +15,12 @@ public class Call {
     private String message_type;
     private int timestamp;
     private int origin;
-    private String destination;
+    private int destination;
     private int duration;
     private String status_code;
     private String status_description;
 
-    public Call(String message_type, int timestamp, int origin, String destination, int duration, String status_code, String status_description) {
+    public Call(String message_type, int timestamp, int origin, int destination, int duration, String status_code, String status_description) {
         this.message_type = message_type;
         this.timestamp = timestamp;
         this.origin = origin;
@@ -57,11 +57,11 @@ public class Call {
         this.origin = origin;
     }
 
-    public String getDestination() {
+    public int getDestination() {
         return destination;
     }
 
-    public void setDestination(String destination) {
+    public void setDestination(int destination) {
         this.destination = destination;
     }
 
